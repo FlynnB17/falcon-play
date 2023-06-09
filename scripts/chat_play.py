@@ -179,6 +179,7 @@ def get_model(args: ModelArguments) -> AutoModelForCausalLM:
     load_in_4bit=load_in_4bit,
     load_in_8bit=load_in_8bit,
     device_map=device_map,
+    offload_folder="offload",
     quantization_config=quantization_config,
     torch_dtype=compute_dtype,
     trust_remote_code=args.trust_remote_code,
